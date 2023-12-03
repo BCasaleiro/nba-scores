@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nba-scores"
+version = "0.1.0"
+description = "Small script to download NBA scores to CSV"
+authors = ["Bernardo Casaleiro <bernardocasaleiro@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nba_scores"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+types-requests = "^2.31.0.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+mypy = "^1.7.1"
+isort = "^5.12.0"
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
